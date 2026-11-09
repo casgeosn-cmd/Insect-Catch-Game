@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html land="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial scale=1.0"/>
+        <link rel="stylesheet" href="styles.css" />
+        <title>Catch The Insects</title>
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="screen">
+            <h1>Catch The Insects</h1>
+            <button class="btn" id="start-btn">Play Game</button>
+        </div>
+        
+        <div class="screen">
+            <h1>What is your "favorite"insect?</h1>
+            <ul class="insects-list">
+                <li>
+                    <button class = "choose-insect-btn">
+                        <p>Fly</p>
+                        <img 
+                        src="sprites/fly"
+                        alt="fly"
+                        />
+                    </li>
+                    <li>
+                    </button>
+                    <button class = "choose-insect-btn">
+                        <p>Mosquito</p>
+                        <img
+                        src="sprites/mosquito"
+                        alt="mosquito"
+                        />
+                    </button>
+                    </li>
+                    <li>
+                    <button class = "choose-insect-btn">
+                        <p>Spider</p>
+                        <img
+                        src="sprites/spider"
+                        alt="spider"
+                        />
+                    </button>
+                    <button class = "choose-insect-btn">
+                        <p>Roach</p>
+                        <img
+                        src="sprites/roach"
+                        alt="roach"
+                        />
+                    </button>
+                </li>
+            </ul>
+        </div>
+         <div class="screen game-container" id="game-container">
+      <h3 id="time" class="time">Time: 00:00</h3>
+      <h3 id="score" class="score">Score: 0</h3>
+      <h5 id="message" class="message">
+        Are you annoyed yet? <br>
+        You are playing an impossible game!
+      </h5>
+    </div>
+  </body>
+</html>
