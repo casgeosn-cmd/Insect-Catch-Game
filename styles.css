@@ -43,6 +43,11 @@ body {
 .screen.up {
     margin-top: -100vh;
 }
+.choose-insect-btn img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
 
 a {
     color: #fff;
@@ -82,11 +87,6 @@ h1 {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-.choose-insect-btn img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-}
 
 .time, .score {
     position: absolute;
