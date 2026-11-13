@@ -33,7 +33,7 @@ function increaseTime() {
     let s = seconds % 60;
     m = m < 10 ? `0${m}` : m;
     s = s < 10 ? `0${s}` : s;
-    timeEl.innerHTML = `Time: ${m}:${s}`;
+    timeEl.innerHTML = `TIME: ${m}:${s}`;
     seconds++;
 }
 
@@ -43,9 +43,10 @@ function createInsect() {
     const { x, y } = getRandomLocation();
     insect.style.top = `${y}px`;
     insect.style.left = `${x}px`;
-    insect.innerHTML = `<imgsrc="${selectedInsect.src}" alt = "${selectedInsect.alt}" style="transform: rotate (${Math.random() * 360}deg)" />`;
+    insect.innerHTML = `<img src="${selectedInsect.src}" alt = "${selectedInsect.alt}" style="transform: rotate(${Math.random() * 360}deg)" />`;
 
     insect.addEventListener('click', catchInsect);
+
     gameContainer.appendChild(insect);
 }
 
@@ -77,4 +78,4 @@ function increaseScore() {
 
     }
     scoreEl.innerHTML = `Score: ${score}`;
-}
+};
