@@ -4,7 +4,7 @@ const startBtn = document.getElementById('start-btn');
 const gameContainer = document.getElementById('game-container');
 const timeEl = document.getElementById('time');
 const scoreEl = document.getElementById('score');
-const message = document.getElementByIdd('message');
+const message = document.getElementById('message');
 
 let seconds = 0;
 let score = 0;
